@@ -85,5 +85,6 @@
 
 	<PropertyGroup>
 		<DocumentationFile>bin\$(Configuration)\$(TargetFramework)\NBitcoin.xml</DocumentationFile>
+		<AutoGenerateBindingRedirects>True</AutoGenerateBindingRedirects>
 	</PropertyGroup>
 </Project>

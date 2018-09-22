@@ -2,6 +2,7 @@
 
 Currently supported altcoins are:
 
+* Actinium
 * BCash
 * BGold
 * BitCore

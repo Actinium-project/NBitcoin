@@ -141,6 +141,28 @@ namespace NBitcoin.Tests
 			};
 		}
 
+		public class ActiniumNodeDownloadData
+		{
+			public NodeDownloadData v0_18_1_0 = new NodeDownloadData()
+			{
+				Version = "0.18.1_0",
+				Windows = new NodeOSDownloadData()
+				{
+					DownloadLink = "https://github.com/Actinium-project/Actinium/releases/download/v{0}/Actinium.zip",
+					Archive = "Actinium.zip",
+					Executable = "Actinium/Actiniumd.exe",
+					Hash = "2dfc7d4f5986f9dd1f2cf595a9580144f1a9ec9b1ec5c20d0fd17f631a4d0de3"
+				},
+				Linux = new NodeOSDownloadData()
+				{
+					DownloadLink = "https://github.com/Actinium-project/Actinium/archive/v{0}.tar.gz",
+					Archive = "v{0}.tar.gz",
+					Executable = "Actinium-{0}/Actiniumd",
+					Hash = "3411a9e1fbe1ae9458c1608493e01f96f565f93a1700d92a5f9ebcdf4ee77052"
+				}
+			};
+		}
+
 		public class ViacoinNodeDownloadData
 		{
 			public NodeDownloadData v0_15_1 = new NodeDownloadData()
@@ -490,6 +512,11 @@ namespace NBitcoin.Tests
 				}
 			};
 		}
+
+		public static ActiniumNodeDownloadData Actinium
+		{
+			get; set;
+		} = new ActiniumNodeDownloadData();
 
 		public static GroestlcoinNodeDownloadData Groestlcoin
 		{
